@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestamos y Reservas</title>
+    
+    <link rel="stylesheet" href="/style.css">
+</head>
+<header> 
+    <section class="menu">
+<img src="/images/cagogologo.png" alt="logo_cagogo">
+<h1>SIGPRA</h1>
+    </section>
+</header>
+  <div class="container-fluid">
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Buscar Recurso" aria-label="Search"/>
+      <button class="btn btn-outline-success" type="submit">Buscar</button>
+    </form>
+  </div>
+<body>
+    <section class="box">
+    <a href="prestamos.html"></a>
+    <h2>Préstamos</h2>
+    <p style="text-align: center;">Gestiona las solicitudes y préstamos de recursos institucionales</p>
+    <section class="box items">
+    <h4 class="pendiente">🕜 Pendientes <br><p>18</p></h4>
+    <h4 class="activo">⚠︎ Activos <br><p>24</p></h4>
+    <h4 class="completado">✔ Completados <br><p>67</p></h4>
+    <h4 class="vencido">✖ Vencidos <br><p>8</p></h4>
+    </section>
+    </section>
+    <div>
+    <section class="nuevo-prestamo">
+        <details><summary>✚ Nueva Solicitud</summary>
+        <fieldset><legend><h3>✚ Nueva Solicitud</h3></legend>
+         <form>
+            <label><span>Nombre y Apellido</span><input type="text" maxlength="40" required></label><br><br>
+            <label>Numero de Documento<input name="Documento" maxlength="12" required></label><br><br>
+            <label><strong>Tipo de Usuario:</strong></label><br><br>
+            <label><input type="radio" name="rol" required>Estudiante</label>
+            <label><input type="radio" name="rol" required>Docente</label>
+            <label><input type="radio" name="rol" required>Patrocinador</label><br><br>
+            <label><strong>Recursos Disponibles:</strong></label><br><br>
+            <label><input type="radio" name="recursos">Proyector Epson X200</label><br>
+            <label><input type="radio" name="recursos">Mesa de Reuniones</label><br>
+            <label><input type="radio" name="recursos">Laptop HP ProBook</label><br>
+            <label><input type="radio" name="recursos">Camara Canon EOS 80D</label><br>
+            <label><input type="radio" name="recursos">Microfono de solapa</label><br>
+            <label><input type="radio" name="recursos">Pizarra Interactiva</label><br><br>
+            <label><input name="terminos"type="checkbox" required>Acepto TyC </label><br><br>
+            <button type="submit"> Solicitar</button>
+        </form></fieldset>
+        </details>
+    </section>
+    <section class="devolucion">
+        <details><summary>✔ Entrega de Recurso</summary>
+            <fieldset><legend><h3>Devolucion</h3></legend>
+         <form>
+            <label><span>Id Recurso</span><input type="number" maxlength="40" required></label><br><br>
+            <label><strong>Tipo de Usuario:</strong></label><br><br>
+            <label><input type="radio" name="rol" required>Estudiante</label>
+            <label><input type="radio" name="rol" required>Docente</label>
+            <label><input type="radio" name="rol" required>Patrocinador</label><br><br>
+            <label><strong>Recurso(s) a Devolver:</strong></label><br><br>
+            <label><input type="radio" name="recursos">Proyector Epson X200</label><br>
+            <label><input type="radio" name="recursos">Mesa de Reuniones</label><br>
+            <label><input type="radio" name="recursos">Laptop HP ProBook</label><br>
+            <label><input type="radio" name="recursos">Camara Canon EOS 80D</label><br>
+            <label><input type="radio" name="recursos">Microfono de solapa</label><br>
+            <label><input type="radio" name="recursos">Pizarra Interactiva</label><br><br>
+            <label><input name="terminos"type="checkbox" required>Acepto TyC </label><br><br>
+            <button type="submit"> Devolver</button>
+        </form></fieldset>
+        </details>
+    </section>
+    </div>
+  <h2 style="text-align: center;">Recursos</h2>
+    <section class="tabla-prestamos">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Solicitante</th>
+                    <th>Recurso</th>
+                    <th>Fecha Prestamo</th>
+                    <th>Fecha Devolucion</th>
+                    <th>Estado</th>
+                    <th>Responsable</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>P-2025-01</td>
+                    <td>Juan Perez <em>(Estudiante)</em></td>
+                    <td>Proyector Epson X200(Tecnologia)</td>
+                    <td>20/11/2025</td>
+                    <td>23/11/2025</td>
+                    <td class="pendiente">Pendiente</td>
+                    <td>Maria González</td>
+                    <td><button>Aprobar</button><button>Rechazar</button></td>
+                </tr>
+                <tr>
+                    <td>P-2025-02</td>
+                    <td>Ana Rodriguez <em>(Docente)</em></td>
+                    <td>Sala de Reuniones(Mobiliario)</td>
+                    <td>20/11/2025</td>
+                    <td>20/11/2025</td>
+                    <td class="activo">En uso</td>
+                    <td>Carlos Lopez</td>
+                    <td><button>Devolver</button><button>Ver Detalles</button></td>
+                </tr>
+                <tr>
+                    <td>P-2025-03</td>
+                    <td>Luis Martinez <em>(Estudiante)</em></td>
+                    <td>Laptop Hp ProBook(Tecnologia)</td>
+                    <td>14/10/2025</td>
+                    <td>18/10/025</td>
+                    <td class="completado">Completado</td>
+                    <td>Ana Martinez</td>
+                    <td><button>Ver Historial</button></td>
+                </tr>
+                <tr>
+                    <td>P-2025-04</td>
+                    <td>Sofía Torres <em>(Coordinador)</em></td>
+                    <td>Cámara Canon EOS 80D</td>
+                    <td>05/11/2025</td>
+                    <td>12/11/2025</td>
+                    <td class="vencido">Vencido</td>
+                    <td>María González</td>
+                    <td><button>Notificar</button><button>Detalles</button></td>
+                </tr>
+                <tr>
+                    <td>P-2025-05</td>
+                    <td>Roberto García <em>(Estudiante)</em></td>
+                    <td>Micrófono de Solapa</td>
+                    <td>18/11/2025</td>
+                    <td>20/11/2025</td>
+                    <td class="pendiente">Pendiente</td>
+                    <td>Carlos López</td>
+                    <td><button>Aprobar</button><button>Rechazar</button></td>
+                </tr>
+                <tr>
+                    <td>P-2025-06</td>
+                    <td>Carmen López <em>(Docente )</em></td>
+                    <td>Pizarra Interactiva</td>
+                    <td>19/11/2025</td>
+                    <td>21/11/2025</td>
+                    <td class="activo">En uso</td>
+                    <td>Ana Martínez</td>
+                    <td><button>Devolver</button><button>Ver Detalles</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+    </section>
+</body>
+</html>

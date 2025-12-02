@@ -1,0 +1,196 @@
+
+body {
+    background-image: url(/images/fondowebb.png);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px; 
+}
+
+header .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-bottom: 0; 
+    height: auto;
+    min-height: 70px;
+}
+
+header .menu img {
+    height: 80px;
+    max-width: auto; 
+    margin-right: 15px;
+    position: static;
+}
+
+header .menu h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #1216a1;
+}
+.box h2{
+  font-size: 40px;
+  margin-top: 90px;
+  text-align: center;
+}
+
+.box .items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 0px;
+}
+
+.box.items h4 {
+    color:black;
+    border: 3px solid #969390;
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    flex-grow: 1;
+    flex-basis: 50px;
+    margin: 10px;
+}
+
+.box.items h4.pendiente { background-color:#e7cf81 ; color: #856404 }
+.box .items h4.activo { background-color: #cce5ff; color: #004085;}
+.box.items h4.completado {background-color: #d4edda;color: #155724;}
+.box.items h4.vencido {background-color: #f8d7da; color: #721c24; }
+
+.nuevo-prestamo .devolucion{
+  border: solid 1px orangered;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+div{
+  display:flex;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 20px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 12px 15px;
+  background-color: #1216a1;
+  color: white;
+  border: 1px solid orangered;
+  border-radius: 5px;
+  list-style: none;
+  max-width:100%; 
+  text-align: center;
+}
+summary:hover{
+  background-color: orangered;
+}
+
+.nuevo-prestamo .devolucion fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fcfcfc;
+  margin-top: 10px;
+}
+
+.nuevo-prestamo label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.nuevo-prestamo button[type="submit"] {
+    background-color: #1216a1;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nuevo-prestamo button[type="submit"]:hover {
+    background-color: orangered;
+}
+
+.tabla-prestamos {
+    max-width: 95%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.tabla-prestamos table {
+    width: 100%;
+    border-collapse:collapse;
+}
+
+th, td {
+  border: 1px solid orangered;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+thead th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.tabla-prestamos button {
+    padding: 5px 10px;
+    border: 1px solid #1216a1;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.pendiente {
+  background-color: #fff3cd;
+  color: #856404;            
+}
+
+.activo {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.vencido {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.completado {
+  background-color: #d4edda;
+  color: #155724;           
+}
+.container-fluid{
+  display: flex;
+  justify-content:flex;
+  margin: 50px;
+  align-content: center;
+
+}
