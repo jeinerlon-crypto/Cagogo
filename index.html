@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/style.css">
      <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet">
+      rel="stylesheet"/>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     />
 </head>
@@ -16,14 +16,16 @@
   
 
 
+<!-- Botón que abre el modal -->
+<button type="button" class="btn btn-secondary" 
+        data-bs-toggle="modal" 
+        data-bs-target="#modalSignin">
+  Iniciar Sesión
+</button>
 
 
-  <section
-          class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5"
-          tabindex="-1"
-          role="dialog"
-          id="modalSignin"
-        >
+
+  <section class="modal modal-sheet bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalSignin">
           <section class="modal-dialog">
             <section class="modal-content rounded-4 shadow">
               <section class="modal-header p-5 pb-4 border-bottom-0">
@@ -102,15 +104,15 @@
         <footer class="bg-dark text-light py-4 mt-4">
       <section class="container">
         <section class="row">
-          <section class="col-md-3 mb-4">
+          <section class="col-md-3 mb-4 text-white fw-bold">
             <h6>Contacto</h6>
             <a
+            class="text-decoration-none text-white"
               href="mailto:soporte@cagogo.edu.com"
               subject="Consulta%20desde%20la%20web"
               body="Hola%20quisiera%20más%20información%20sobre..."
-              >Solicitar Informacion</a
-            ><br />
-            <a href="tel:+573001234567" class="text-decoration-none fw-bold"
+              >Solicitar Informacion</a><br>
+            <a href="tel:+573001234567" class="text-decoration-none text-white"
               >+57 300 123 4567</a
             >
           </section>
@@ -126,9 +128,9 @@
           </section>
           <section class="col-md-3 mb-4">
             <h6>Redes Sociales</h6>
-            <i class="bi bi-instagram">Instagram</i>
-            <p class="small mb-0">Youtube</p>
-            <p class="small mb-0">Linktree</p>
+            <i class="bi bi-instagram"><a href="https://www.instagram.com/accounts/login/" class="text-decoration-none text-white"> Instagram</a></i><br>
+            <i class="bi bi-youtube"><a href="https://www.youtube.com/" class="text-decoration-none text-white"> Youtube</a></i><br>
+            <i class="bi bi-linkedin"><a href="https://www.linkedin.com/" class="text-decoration-none text-white"> Linkedin</a></i>
           </section>
         </section>
       </section>
