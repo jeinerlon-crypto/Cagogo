@@ -9,15 +9,94 @@
     <link rel="stylesheet" href="../style.css"/>
   
   <header>
-    <section class="menu">
-      <a href="../index.html">
-     <img src="../images/cagogologo.png" alt="logo_cagogo"/></a>
-      <h1>CAGOGO</h1>
-    </section>
+      <section class="menu d-flex align-items-center">
+        <a href="../index.html">
+  <img src="../images/cagogologo.png" alt="logo_cagogo"></a>
+  <h1>CAGOGO</h1>
+<button type="button" class="btn btn-primary ms-auto" 
+        data-bs-toggle="modal" 
+        data-bs-target="#modalSignin">
+  Iniciar Sesión
+</button>
+  </section>
   </header>
   </head>
 
   <body>
+
+    <section class="modal modal-sheet bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalSignin">
+          <section class="modal-dialog">
+            <section class="modal-content rounded-4 shadow">
+              <section class="modal-header p-5 pb-4 border-bottom-0">
+                <h1 class="fw-bold mb-0 fs-2">Inicio de Sesion</h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </section>
+              <section class="modal-body p-5 pt-0">
+                <form class="">
+                  <section class="form-floating mb-3">
+                    <input
+                      type="email"
+                      class="form-control rounded-3"
+                      id="floatingInput"
+                      placeholder="name@example.com"
+                    />
+                    <label for="floatingInput">Correo</label>
+                  </section>
+                  <section class="form-floating mb-3">
+                    <input
+                      type="password"
+                      class="form-control rounded-3"
+                      id="floatingPassword"
+                      placeholder="Password"
+                    />
+                    <label for="floatingPassword">Contraseña</label>
+                  </section>
+                  <section class="mb-3">
+                    <label for="role" class="form-label">Rol</label>
+                    <select class="form-select" id="role" required>
+                      <option value="" selected disabled>
+                        Selecciona tu rol
+                      </option>
+                      <option value="estudiante">Estudiante</option>
+                      <option value="docente">Docente</option>
+                      <option value="administrador">Administrador</option>
+                    </select>
+                </section>
+                  <button
+                    class="w-100 mb-2 btn btn-lg rounded-3 btn-primary"
+                    type="submit"
+                  >
+                    Iniciar Sesion
+                  </button>
+                  <small class="text-body-secondary"
+                    >Al presionar iniciar sesion, acepta los terminos y
+                    condiciones.
+                  </small>
+
+                  <hr class="my-4" />
+                  <h2 class="fs-5 fw-bold mb-3">O inicie con:</h2>
+                  <a
+                    class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3"
+                    href="https://accounts.google.com/signin"
+                  >
+                    Google+
+                  </a>
+                  <a
+                    class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3"
+                    href="https://www.facebook.com/login/?locale=es_LA"
+                  >
+                    Facebook
+                  </a>
+                </form>
+              </section>
+            </section>
+          </section>
+        </section>
 
     <div class="container my-5">
   <div class="mx-auto" style="width: 80%;">
